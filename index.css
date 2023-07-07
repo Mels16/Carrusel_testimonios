@@ -1,0 +1,154 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: sans-serif;
+ }
+ a{
+    text-decoration: none;
+ }
+
+
+ img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+ }
+
+ .contenedor{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+  
+}
+
+.slider-contendor{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.slider-test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    flex-shrink:0;
+   align-items: center;
+}
+
+
+/*menu*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1pc 4pc;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: with 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+/*Banner*/
+
+.banner {
+    position: relative;
+    widows: 100%
+
+    background-size cover 
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.75);
+}
+
+.contenido{
+    margin:0;
+    padding: 0;
+    /* width: 100%;
+    height: 100%; */
+    /* color: white; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+}
+
+.contenido h2{
+    margin: 20px;
+    color: #708090;
+}
+.containerButon{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    justify-content: center;
+    padding: 1pc;
+}
+.button{
+    color: black;
+}
+.butonConta{
+    border: 1px solid #708090;
+    padding: 6px 30px;
+    border-radius: 10px;
+    background: #708090;
+    color: white;
+}
+.contenido .boton{
+    text-decoration: none;
+    color: white;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff
+ 
+}
+
+.butonConta:hover{
+    background-color: #fff;
+    color: #333;
+}
